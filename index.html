@@ -2,14 +2,72 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site de Testes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Alguém Especial ❤️</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f2f5; padding: 50px; }
-        h1 { color: #007bff; }
+        /* Configuração do fundo e letras */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5ec, #ffb3c6);
+            color: #4a0e17;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Caixa branca charmosa onde fica o texto */
+        .cartao {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            border: 2px solid #ff758f;
+        }
+
+        h1 {
+            color: #c9184a;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Animação do coração piscando/batendo */
+        .coracao {
+            font-size: 50px;
+            color: #ff4d6d;
+            animation: bater 1.2s infinite;
+            margin-top: 20px;
+        }
+
+        @keyframes bater {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Este é o meu primeiro site de testes gratuito.</p>
+
+    <div class="cartao">
+        <!-- DICA: Mude o "Meu Amor" para o nome dela se quiser! -->
+        <h1>Para o Meu Amor ❤️</h1>
+        
+        <!-- Mude este texto para uma frase interna de vocês ou sua declaração -->
+        <p>Criei este site inteiramente do zero apenas para te dizer o quanto você é especial na minha vida.</p>
+        <p><strong>Eu te amo muito!</strong></p>
+        
+        <!-- O coração que fica batendo na tela -->
+        <div class="coracao">❤️</div>
+    </div>
+
 </body>
 </html>
+
